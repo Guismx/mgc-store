@@ -1,17 +1,49 @@
+/* PÁGINA GERAL */
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* BODY */
 .container{
     width: 100%;
     color: black;
     background: linear-gradient(to right, #0c0c0c, rgb(29, 29, 29), rgb(29, 29, 29), #0c0c0c);
     flex-wrap: wrap;
 }
+
+/* BOTÃO DE COMPRAR */
+.btn-comprar {
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px;
+    width: 275px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+}
+.btn-comprar a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    
+}
 .btn-comprar:hover {
     box-shadow: 2px 2px 2px rgb(250, 249, 252);
 }
+
+
+/* LINHA COLORIDA */
+.container-fluidcolor-line {
+    background: linear-gradient(to right, #ff0101, rgb(150, 4, 248), rgb(150, 4, 248), #ff0000);
+    height: 6px;
+    width: 100%;
+}
+
+
+/* MENU PRINCIPAL */
 #menu-h {
     list-style: none;
     width: 100%;
@@ -20,40 +52,107 @@
     top: 0;
     left: 0;
 }
-
 #menu-h li {
     display: inline;
 }
-
 #menu-h li a {
     color: rgb(255, 255, 255);
     padding: 10px;
     display: inline-block;
     text-decoration: none;
-    width: 160px;
+    width: 169px;
     font-weight: bold;
 }
 #menu-h li a:hover {
-    background-color: rgb (150, 4, 248);
+    background-color: rgb(0, 0, 0);
+}
+.btn-menu {
+    background-color:rgb(0, 0, 0) rgb(27, 27, 27);
+    border-radius: 6px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
 }
 
+.btn-menu a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+
+}
+
+.btn-menu:hover {
+    box-shadow: 2px 2px 2px rgb(84, 9, 236);
+}
+
+/*PRODUTOS */
 .menu-cam {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
-
 .menu-cam h3 {
-    color: white;
+    color: rgb(0,253,127);
     width: 275px;
     padding: 25px;
 }
-
 .menu-cam li h4{
     width: 275px;
     padding: 25px;
     color: white;
 }
+.menu-cam img {
+    box-shadow: 2px 2px 2px rgb(150, 4, 248);
+}
+
+
+
+/* REDES SOCIAIS E BARRA DE PESQUISA */
+.redes-search {
+    position: relative;
+}
+.search-box {
+    background: rgb(8, 8, 8);
+    width: 900px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 2px rgb(150, 4, 248);
+}
+.loupe {
+    width: 30px;
+    height: 30px;
+}
+.search-text {
+    color: rgb(255, 255, 255);
+    background: rgb(15, 15, 15);
+    width: 840px;
+    height: 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.redes-sociais {
+    list-style: none;
+    text-decoration: none;
+}
+.logo-redes {
+    width: 40px;
+    height: 40px;
+}
+.btn-search {
+    background: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 
 /* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
@@ -370,101 +469,31 @@ h6 span {
 }
 */
 
-.logo-home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 430px;
-    height: 430px;
-}
-.logo-home1 {
-    width: 430px;
-    height: 430px;
-    background-color: 2px 2px 2px white;
-}
+
+/* DIV BANNER DE PROMOÇÃO */
 .logo-homepage {
     display: flex;
     justify-content: space-around;
-}
-
-.redes-search {
-    position: relative;
-}
-.search-box {
-    background: rgb(8, 8, 8);
-    width: 900px;
-    height: 40px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    box-shadow: 1px 1px 2px rgb(150, 4, 248);
 
 }
-.loupe {
-    width: 30px;
-    height: 30px;
-}
-.search-text {
-    color: rgb(255, 255, 255);
-    background: rgb(15, 15, 15);
-    width: 840px;
-    height: 30px;
-    border-radius: 40px;
-    text-decoration: none;
-    border: none;
-    padding: 10px;
-    outline: none;
-}
-.redes-home {
-    list-style: none;
-}
-.btn-search {
-    background: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.logo-promocao {
+    color: black;
+    border-radius: 10px;
+    border: solid rgb(150, 4, 248);
+    width: 1300px;
+    height: 450px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.first-destaque{
+/*PRODUTOS EM DESTAQUE*/
+.primeiro-destaque{
     display:inline-block;
     align-items: center;
     justify-content: center;
     background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2021/04/Galaxia-scaled.jpg);
     width: 1900px;
     height: 600px;
-    border-radius: 40px;
-    border: solid rgb(255, 255, 255);
+    border: solid rgb(41, 41, 41);
 }
 .nome-destaques {
     display: flex;
@@ -488,16 +517,17 @@ h6 span {
     border-radius: 40px;
     width: 1894px;
 }
-.destaques a, h4, h5 {
+.camisas-destaque img{
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.camisas-destaque h3 {
+    color: rgb(0, 253, 127);
+}
+/*.destaques a, h4, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-
-
-
+}*/
 
 .logo-fm {
     display: flex;
@@ -510,8 +540,6 @@ h6 span {
     border-radius: 20px;
     border: solid rgb(150, 4, 248);
 }
-
-
 
 .rodape {
     color: white;
