@@ -518,34 +518,40 @@ h6 span {
     display:inline-block;
     align-items: center;
     justify-content: center;
-    background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2021/04/Galaxia-scaled.jpg);
-    width: 1900px;
+    background-color: #070707e7;
+    max-width: 75rem;
     height: 600px;
-    border: solid rgb(41, 41, 41);
+    border: solid rgb(150, 4, 248);
+    overflow: hidden;
 }
 .nome-destaques {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(253, 253, 253);
+    color: rgb(150, 4, 248);
     width: 800px;
     height: 90px;
     border-radius: 40px;
     font-size: 50px;
+    margin: none;
 }
 .destaques {
     color: white;
+    align-items: center;
     font-size: 16px;
     padding: 2rem 0;
     display: flex;
-    align-items:center;
-    justify-content:center;
-    background: rgb(0, 0, 0);  
+    background: rgba(31, 31, 31, 0.534);  
+    border: 2px solid rgb(150, 4, 248);
     min-height: 30vh;
     border-radius: 40px;
-    width: 1894px;
+}
+.camisas-destaque {
+  margin-left: 2rem;
 }
 .camisas-destaque img{
+    width: 200px;
+    height: 200px;
     box-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 .camisas-destaque h3 {
