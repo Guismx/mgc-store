@@ -590,6 +590,7 @@ h6 span {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    
 }
 .recive-news-2 {
     justify-content: center;
@@ -605,6 +606,8 @@ h6 span {
     align-items: center;
     justify-content: center;
     display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .recive-news-2 form {
     justify-content: center;
@@ -685,9 +688,11 @@ h6 span {
     height: 300px;
     background: black;
     padding-top: 40px;
+    border: 2px solid rgb(150, 4, 248);
 }
 .ia-rodape {
     display: flex;
+    margin-bottom: 4rem;
 }
 .inline {
     display:inline-flex;
